@@ -1,10 +1,17 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Stack, Switch, Typography } from "@mui/material";
 
 function ActionBar(){
 
     return(
-        <Box sx={{marginTop : 3}}>
-            <Button variant="contained">Refresh Status</Button>
+        <Box sx={{marginTop : 4}}>
+            <Stack direction="row" justifyContent="space-between" alignItems="center">
+                <Stack direction="row" spacing={1} alignItems="center">
+                    <Switch/>
+                    <Typography variant="body2">AUTO REFRESH</Typography>
+                </Stack>
+
+                <Button variant="outlined">Subscribe for updates</Button>
+            </Stack>
         </Box>
     );
 
